@@ -3,23 +3,42 @@
 
 @import 'components/main';
 
-$grey: #e7e7e7;
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlEY6Fu39Tt9XkmtSosaMoEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoMzpKUtbt71woJ25xl7KOGD0.ttf) format('truetype');
+}
 
-header,
-footer,
-section {
-	padding: 1em 3em;
+$atc-grey: #585858;
+$atc-white: #ffffff;
+
+body {
+	font-family: SourceSansPro-Regular,helvetica,sans-serif;
+
+	header, footer, section { @include page-padding(); }
 
 	h1, h2, h3, h4 {
 		text-transform: uppercase;
 	}
-}
 
-footer {
-	background-color: $grey;
-	a {
-		&:hover {
+	footer {
+		text-transform: uppercase;
+		padding:3em, 15%, 0, 15%;
+		background-color: $atc-grey;
+		a {
 			text-decoration:none;
+			color:$atc-white;
+			font-size: 2em;
+			line-height: 2em;
 		}
 	}
 }
+
+
