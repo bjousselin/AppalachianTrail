@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'atc-icons';
-  src: url('../font/atc-icons.eot?27915443');
-  src: url('../font/atc-icons.eot?27915443#iefix') format('embedded-opentype'),
-       url('../font/atc-icons.woff?27915443') format('woff'),
-       url('../font/atc-icons.ttf?27915443') format('truetype'),
-       url('../font/atc-icons.svg?27915443#atc-icons') format('svg');
+  src: url('../fonts/atc-icons.eot?27915443');
+  src: url('../fonts/atc-icons.eot?27915443#iefix') format('embedded-opentype'),
+       url('../fonts/atc-icons.woff?27915443') format('woff'),
+       url('../fonts/atc-icons.ttf?27915443') format('truetype'),
+       url('../fonts/atc-icons.svg?27915443#atc-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
