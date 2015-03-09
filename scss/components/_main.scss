@@ -20,7 +20,15 @@ body {
   header, footer, section { @include page-padding(); }
 
   h1, h2, h3, h4 {
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
+  }
+
+  header {
+    .drop-nav {
+       background-color: #585858;
+       padding: 1.2em 0 1.2em 0;
+    }
   }
 
   footer {
@@ -36,6 +44,9 @@ body {
   }
 }
 
+.toggle {
+  text-align: center;
+}
 
 #mobile-nav {
   position: absolute;
@@ -44,6 +55,11 @@ body {
 
 #nav-open {
   display: none;
+  text-align: center;
+}
+
+#nav-open li {
+  padding-top: 1.2em;
 }
 
 #mobile-nav:checked ~ #nav-open {
