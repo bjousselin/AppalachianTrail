@@ -3,6 +3,8 @@
 
 @import 'components/main';
 
+$grey: #e7e7e7;
+
 header,
 footer,
 section {
@@ -10,5 +12,14 @@ section {
 
 	h1, h2, h3, h4 {
 		text-transform: uppercase;
+	}
+}
+
+footer {
+	background-color: $grey;
+	a {
+		&:hover {
+			text-decoration:none;
+		}
 	}
 }
