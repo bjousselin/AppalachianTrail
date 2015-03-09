@@ -26,6 +26,13 @@ body {
     text-transform: uppercase;
   }
 
+  header {
+    .drop-nav {
+       background-color: #585858;
+       padding: 1.2em 0 1.2em 0;
+    }
+  }
+
   footer {
     text-transform: uppercase;
     padding-top:3em;
