@@ -1,14 +1,5 @@
+@import 'reset';
 @import 'base';
 @import 'mixins';
 
 @import 'components/main';
-
-header,
-footer,
-section {
-	padding: 1em 3em;
-
-	h1, h2, h3, h4 {
-		text-transform: uppercase;
-	}
-}
