@@ -18,6 +18,7 @@ $atc-green: #339933;
 
 body {
   font-family: SourceSansPro-Regular,helvetica,sans-serif;
+  color: $atc-grey;
 
   header, footer, section { @include page-padding(); }
 
@@ -35,13 +36,15 @@ body {
         color:$atc-white;
         font-size: 1.2em;
         line-height: 2em;
-        padding-bottom; 5em;  
+        padding-bottom: 5em;  
       }
 
       p {
         span{
           color: $atc-green;
+          padding-top: 5em;
         }
+
         a {
           font-size: 0.7em;
           color: $atc-lightgrey;
@@ -50,6 +53,9 @@ body {
   }
 }
 
+ul{
+  padding-bottom: 1em; 
+}
 
 .socialmedia{
   padding-top:10%;
@@ -61,6 +67,7 @@ body {
 .legal-links{
         padding-top: 2em;
         font-size: .75em;
+        text-align: center;
 }
 
 #mobile-nav {
@@ -76,11 +83,11 @@ body {
   display: block;
 }
 
-@media (max-width: 600px){
+@media screen and (max-width: 600px){
 
 footer {
-    padding-left:3em;
   }
+
 }
 
 /* Need to find that cheveron from Ben
