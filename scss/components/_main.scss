@@ -30,23 +30,23 @@ body {
     padding-top:3em;
     padding-bottom:2em;
     background-color: $atc-grey;
-    a, h2, {
-      text-decoration:none;
-      color:$atc-white;
-      font-size: 1.2em;
-      line-height: 2em;
-      padding-bottom; 5em;  
+      a, h2, {
+        text-decoration:none;
+        color:$atc-white;
+        font-size: 1.2em;
+        line-height: 2em;
+        padding-bottom; 5em;  
       }
 
-    p {
-      span{
-        color: $atc-green;
+      p {
+        span{
+          color: $atc-green;
+        }
+        a {
+          font-size: 0.7em;
+          color: $atc-lightgrey;
+        }
       }
-      a {
-        font-size: 0.7em;
-        color: $atc-lightgrey;
-      }
-    }
   }
 }
 
