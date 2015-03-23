@@ -83,7 +83,7 @@ body {
   #our-mission {
     @include dark-theme();
 
-    background-image: url('../../images/m-forest.jpg');
+    background-image: url('../images/m-forest.jpg');
     background-position: center;
     text-align: center;
 
@@ -111,10 +111,10 @@ body {
     }
   }
   #donation-hero {
-    background-image: url('../../images/m-bridge.jpg');
+    background-image: url('../images/m-bridge.jpg');
   }
   #join-us-hero {
-    background-image: url('../../images/m-moss.jpg');
+    background-image: url('../images/m-moss.jpg');
   }
   .hero {
     background-position:center;
