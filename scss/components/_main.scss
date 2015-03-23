@@ -32,7 +32,7 @@ body {
 
   header, footer, section { @include page-padding(); }
 
-  h1, h2, h3, h4 {
+  h1, h2 {
     text-transform: uppercase;
   }
 
@@ -45,6 +45,9 @@ body {
   p {
     line-height: 1.2em;
     margin-bottom: 1em;
+    &.large-paragraph {
+      font-size: 1.6em;
+    }
   }
   .large-icon {
     font-size: 5em;
@@ -84,8 +87,38 @@ body {
     }
   }
 
+  #donation {
+    @include green-theme();
+    
+    text-align: center;
+    button {
+      @include hollow-button($atc-white, $atc-green);
+    }
+  }
+  #donation-hero {
+    background-image: url('../../images/m-bridge.jpg');
+  }
+  .hero {
+
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: $atc-white;
+
+    h2 {
+      margin: 0;
+      padding: 2em 0;
+      letter-spacing: 3px;
+      font-size: 2.5em;
+      span {
+        font-size: 0.5em;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
   #sign-in {
-    background-color: $atc-green;
+    @include green-theme();
 
     .forgot-password {
       text-align: right;
@@ -105,6 +138,47 @@ body {
 
       input[type="submit"] {
         @include hollow-button($atc-white, $atc-green);
+        font-size: 1em;
+      }
+    }
+  }
+  #contact-us {
+    .green-text {
+      color: $atc-green;
+      &.link {
+        text-decoration: underline;
+        a {
+          color: $atc-green;
+        }
+      }
+    }
+
+    h3 {
+      margin-top: 2em;
+      margin-bottom: 0.5em;
+    }
+    h4 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+
+    p,
+    a,
+    a:active,
+    a:hover {
+      color: $atc-lightgrey;
+      padding: 0;
+      margin: 0;
+    }
+    form {
+      h3{
+        // font-size: 1em;
+        // line-height: 1em;
+        // padding-top: .75em;
+        // letter-spacing: .2em;
+        // text-align: left;
+        // font-family: 'Oswald', sans-serif;
+        // color: $atc-grey;
       }
     }
   }
@@ -144,6 +218,11 @@ body {
         }
       }
   }
+
+  #map-canvas {
+    width: 100%;
+    height: 400px;
+  }
 }
 
 ul{
@@ -165,21 +244,11 @@ h1{
     span {
       font-size: .8em;
       letter-spacing: .2em;
-      text-align: left;
+      text-align: center;
       color: $atc-grey;
       width: 100%;
       display: block;
     }
-}
-
-h3{
-  font-size: 3em;
-  line-height: 1em;
-  padding-top: .75em;
-  letter-spacing: .2em;
-  text-align: left;
-  font-family: 'Oswald', sans-serif;
-  color: $atc-grey;
 }
 
 .drop-nav{

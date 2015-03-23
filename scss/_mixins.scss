@@ -4,8 +4,9 @@
 @mixin dark-theme() {
 	color: $atc-white;
 }
-@mixin light-theme() {
-
+@mixin green-theme() {
+	background: $atc-green;
+	color: $atc-white;
 }
 @mixin button-base() {
 	display: block;
