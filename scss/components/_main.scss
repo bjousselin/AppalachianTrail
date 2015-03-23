@@ -37,18 +37,22 @@ body {
   }
 
   h2 {
-    font-size: 1.5em;
-    margin-bottom: 0.4em;
+    font-size: 1.7em;
+    margin-bottom: 1em;
+    font-weight: bold;
   }
 
   p {
     line-height: 1.2em;
     margin-bottom: 1em;
   }
-
   .large-icon {
     font-size: 5em;
     line-height: 2em;
+  }
+
+  button {
+    @include hollow-button($atc-green, $atc-white);
   }
 
   header {
@@ -64,6 +68,55 @@ body {
     background-image: url('../../images/forest.jpg');
     background-position: center;
     text-align: center;
+
+    h2 {
+      font-size: 1.4em;
+      margin-bottom: 0.3em
+    }
+  }
+
+  #volunteer {
+    text-align: center;
+
+    button {
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+    }
+  }
+
+  #sign-in {
+    background-color: $atc-green;
+
+    .forgot-password {
+      text-align: right;
+    }
+
+    h2 {
+      text-transform: none;
+    }
+
+    form {
+      color: $atc-white;
+      background: none;
+
+      a {
+        text-decoration: underline;
+      }
+
+      input[type="submit"] {
+        @include hollow-button($atc-white, $atc-green);
+      }
+    }
+  }
+  
+  form {
+    @include base-form();
+
+    color: black;
+    h3 {
+      font-size: 1.1em;
+      font-weight: bolder;
+    }
   }
 
   footer {

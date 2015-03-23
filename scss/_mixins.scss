@@ -1,9 +1,58 @@
 @mixin page-padding() {
-	padding: 1em 3em;
+	padding: 2.3em 3em;
 }
 @mixin dark-theme() {
 	color: $atc-white;
 }
 @mixin light-theme() {
 
+}
+@mixin button-base() {
+	display: block;
+	width: 100%;
+	font-size: 1.5em;
+	padding: 0.3em 0.3em;
+	background: #cccccc;
+	color: white;
+	border: 3px solid #cccccc;
+	text-decoration: none;
+	letter-spacing: 1.3px;
+	text-align: center;
+}
+@mixin solid-button($front, $back) {
+	@include button-base();
+	color: $back;
+	background-color: $front;
+	border-color: $front;
+}
+@mixin hollow-button($front, $back) {
+	@include button-base();
+	color: $front;
+	background-color: $back;
+	border-color: $front;
+}
+@mixin base-form() {
+
+    background-color: $atc-lightgrey;
+    padding: 1em;
+    padding-right:1.5em;
+
+    input[type="text"],
+    input[type="password"] {
+      display: block;
+      width: 100%;
+      margin: 1em 0;
+      padding: 0.7em;
+      padding-right: 0;
+      border-width:0;
+    }
+    input[placeholder] {
+    	text-transform: uppercase;
+    	font-size: 0.7em;
+    }
+
+    input[type="submit"] {
+    	@include solid-button($atc-green, $atc-white);
+    	margin: 2em 0 0.5em 0;
+    }
 }
