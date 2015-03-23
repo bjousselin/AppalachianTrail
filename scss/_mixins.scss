@@ -1,7 +1,9 @@
 @mixin page-padding() {
 	padding: 1em 3em;
 }
+@mixin dark-theme() {
+	color: $atc-white;
+}
+@mixin light-theme() {
 
-@mixin backgroundimg() {
-	background-img: url(../images/forest.jpg);
 }

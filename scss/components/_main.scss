@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro Regular';
   font-style: normal;
   font-weight: 400;
   src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlEY6Fu39Tt9XkmtSosaMoEA.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro Italic';
   font-style: italic;
   font-weight: 400;
   src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoMzpKUtbt71woJ25xl7KOGD0.ttf) format('truetype');
@@ -26,7 +26,8 @@ nav{
 }
 
 body {
-  font-family: SourceSansPro-Regular,helvetica,sans-serif;
+  font-family: 'Source Sans Pro Regular';
+  font-weight: 0;
   color: $atc-grey;
 
   header, footer, section { @include page-padding(); }
@@ -35,11 +36,34 @@ body {
     text-transform: uppercase;
   }
 
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.4em;
+  }
+
+  p {
+    line-height: 1.2em;
+    margin-bottom: 1em;
+  }
+
+  .large-icon {
+    font-size: 5em;
+    line-height: 2em;
+  }
+
   header {
     .drop-nav {
        background-color: #585858;
        padding: 1.2em 0 1.2em 0;
     }
+  }
+
+  #our-mission {
+    @include dark-theme();
+
+    background-image: url('../../images/forest.jpg');
+    background-position: center;
+    text-align: center;
   }
 
   footer {
@@ -83,7 +107,7 @@ a:link {
 }
 
 .navigation-links{
-  color; #FFFFFF;
+  color: #FFFFFF;
 }
 
 .logo-container{
