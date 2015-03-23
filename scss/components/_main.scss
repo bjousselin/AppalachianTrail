@@ -21,8 +21,23 @@ header{
 }
 
 nav{
+  background-color:$atc-green;
+  padding: 1em 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.mobile-nav-toggle {
+  text-align: center;
+  padding: 1.2em 0 1.2em 0;
   background-color:$atc-grey;
-  padding: 0;
+  color: white;
+  text-transform: uppercase;
+}
+
+.nav-open {
+  padding: 2em 0 0 0;
 }
 
 body {
