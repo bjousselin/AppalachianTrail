@@ -165,10 +165,21 @@ h1{
     span {
       font-size: .8em;
       letter-spacing: .2em;
+      text-align: left;
       color: $atc-grey;
       width: 100%;
       display: block;
     }
+}
+
+h3{
+  font-size: 3em;
+  line-height: 1em;
+  padding-top: .75em;
+  letter-spacing: .2em;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  color: $atc-grey;
 }
 
 .drop-nav{
