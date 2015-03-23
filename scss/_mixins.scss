@@ -1,5 +1,8 @@
 @mixin page-padding() {
 	padding: 2.3em 3em;
+	@media screen and (min-width: 600px){
+	padding: 2.3em 12em;
+	}
 }
 @mixin dark-theme() {
 	color: $atc-white;
