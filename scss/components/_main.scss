@@ -76,7 +76,7 @@ body {
         color:$atc-white;
         font-size: 1.2em;
         line-height: 2em;
-        padding-bottom: 5em;  
+ 
       }
 
       p {
@@ -97,13 +97,20 @@ ul{
   padding-bottom: 1em; 
 }
 
+header{
+  width: 0 100% 0 100%;
+}
+.drop-nav{
+  width: 0 100% 0 100%;
+}
+
 a,
 a:active,
 a:hover,
 a:visited,
 a:link {
-    color: #FFFFFF;
-    text-decoration: none;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .navigation-links{
@@ -113,20 +120,19 @@ a:link {
 .logo-container{
   width: 150px;
   margin: 0 auto;
-
 }
 
 .socialmedia{
   padding-top:10%;
   color:$atc-lightgrey;
-  font-size: 5em;
+  font-size: 2.5em;
   text-align:center;
 }
 
 .legal-links{
-        padding-top: 2em;
-        font-size: .75em;
-        text-align: center;
+  padding-top: 2em;
+  font-size: .75em;
+  text-align: center;
 }
 
 #mobile-nav {
@@ -142,11 +148,19 @@ a:link {
   display: block;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (min-width: 300px){
 
 footer {
+  i {
+
+  }
   }
 
+}
+
+.socialmedia{
+  font-size: 5em;
+  margin-bottom: 1em;
 }
 
 /* Need to find that cheveron from Ben
