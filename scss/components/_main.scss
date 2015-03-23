@@ -113,13 +113,15 @@ body {
   #donation-hero {
     background-image: url('../../images/m-bridge.jpg');
   }
+  #join-us-hero {
+    background-image: url('../../images/m-moss.jpg');
+  }
   .hero {
-
+    background-position:center;
     text-align: center;
     padding: 0;
     margin: 0;
     color: $atc-white;
-
     h2 {
       margin: 0;
       padding: 2em 0;
@@ -129,6 +131,23 @@ body {
         font-size: 0.5em;
         letter-spacing: 1px;
       }
+    }
+  }
+
+  .stat {
+    text-align: center;
+
+    .number {
+      color: $atc-green;
+      font-weight: bold;
+      font-size: 3em;
+
+      margin-bottom: 0.2em;
+    }
+    .title {
+      font-size: 1.2em;
+      color: $atc-lightgrey;
+      margin-bottom: 3em;
     }
   }
 
